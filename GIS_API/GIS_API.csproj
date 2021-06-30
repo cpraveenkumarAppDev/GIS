@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GIS_API</RootNamespace>
+    <AssemblyName>GIS_API</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>59241</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.19.3.1\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess.EntityFramework, Version=6.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.EntityFramework.19.3.0\lib\net45\Oracle.ManagedDataAccess.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.5.1\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.5.1\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.5.1\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.5.1\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.5.1\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.5.1\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AnalyticsController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HydrographController.cs" />
+    <Compile Include="Controllers\MappingController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Models\AdminOracleContext.cs" />
+    <Compile Include="Models\Analytics\GISWebData.cs" />
+    <Compile Include="Models\QueryResult.cs" />
+    <Compile Include="Models\Recovery\RecoveryWell.cs" />
+    <Compile Include="Models\OracleSdeContext.cs" />
+    <Compile Include="Models\OracleDataCollectionContext.cs" />
+    <Compile Include="Models\OracleReportContext.cs" />
+    <Compile Include="Models\AdminRepository.cs" />
+    <Compile Include="Models\SdeRepository.cs" />
+    <Compile Include="Models\WellRegistry.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomerView.cs" />
+    <Compile Include="Models\ErrorNotification.cs" />
+    <Compile Include="Models\Hydrograph\Hydrograph.cs" />
+    <Compile Include="Models\Hydrograph\HydrographManager.cs" />
+    <Compile Include="Models\OracleContext.cs" />
+    <Compile Include="Models\Report.cs" />
+    <Compile Include="Models\ReportDetails.cs" />
+    <Compile Include="Models\ReportView.cs" />
+    <Compile Include="Models\Repository.cs" />
+    <Compile Include="Models\WaterBank.cs" />
+    <Compile Include="Models\WaterBankView.cs" />
+    <Compile Include="Models\WellsHub\WellsHubRecordUpdates.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\WaterBankViewModel.cs" />
+    <Compile Include="ViewModels\ProviderViewModel.cs" />
+    <Compile Include="ViewModels\WellOnParcelViewModel.cs" />
+    <Compile Include="ViewModels\GISWebDataViewModel.cs" />
+    <Compile Include="ViewModels\WellsHubViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312204110575601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312230110503301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312238110583501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312258110510901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312308110580601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312316110522701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312320110574301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312320110574302__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_312740110581301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313305111174901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313332109430001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313345111024801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313345111024802__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313433111201601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313506111210901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313533109301801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313639110183501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_313735111023701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_314321111075001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_314454111023701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_314606111011301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_314940110212301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_315005110212501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_315019110203501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_315303109413701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_315614110543601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_315705110560901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_315724110460701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_315909110540601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_315953110490001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320029109221601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320105109382001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320143110563601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320150111164101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320213111212301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320216110405901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320249110413501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320252110571201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320441109453901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320540110573401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320609110440101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320616111125702__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320620110572901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320656111160201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320726111002001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320824110593001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320843110551401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320901110175301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320943111123501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320944111125701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320944111132101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_320946110472101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321021111125801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321023110575201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321034111140801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321057111141601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321058110563301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321103110491401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321117111120301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321122110572501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321142110530301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321150110482502__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321156110563301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321157110515901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321202110553001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321202110571201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321208110525001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321209110534101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321221110522201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321236110521201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321239110472501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321239110560701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321240110531301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321244110504401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321254110485601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321257110541801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321302110530801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321310111150001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321311110480401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321324110563601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321329110563701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321330110532301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321333110504601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321335110500301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321341110462601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321344110475501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321345110552501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321345111143601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321346110521001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321346110553201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321348111154401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321403111135401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321404111145401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321404111153201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321405110511401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321407110520501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321414110472301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321414111133601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321418110462401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321419110462101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321424110432901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321424110482301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321431110574801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321432110574901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321436110452001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321443110531301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321445110554601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321452110543801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321455110511901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321455111154101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321456111160201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321503110484901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321503111152601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321504110521601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321504110575001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321505110551501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321505111002601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321509110462501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321512110480701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321518110540601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321518110552301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321519110571501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321523110491801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321530110523501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321531111152401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321534110522201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321536110520201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321537110585001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321542110502701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321545110473601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321548110561801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321548111160301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321549110535601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321557110503401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321559110573401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321601110544601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321606110503501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321615110532901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321638110541401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321639111173801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321647110532201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321647110563301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321659110560001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321703110575401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321706110442201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321721110561001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321742110585301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321745111012801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321747110585901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321748110582101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_321812109264401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_322009111191801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_322200111060401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_322238111065701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_322337111165301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_322339111170001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_322407110574101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_322916111181701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_323635111330001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_324113109415401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_324626111425001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_325117111342801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_325656112064801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_330652111262001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_330725113260201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_331008112410801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_331446111380001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_331846112391501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332008111495801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332101112345301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332102112291201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332137112490001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332148113073401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332236112422901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332241110461201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332328112253601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332346111512801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332423112070201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332452112335001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332549111432601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332648112454301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332711111482601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332740111594301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332745112404501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332747112041101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332855111535901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332902112083101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332938112093401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_332950112565701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333121112250201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333135112032501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333135112240201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333248111535801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333301113182601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333304112240401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333347112080401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333434112063201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333448111542801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333539112172001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333546112064001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333550112080401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333703112091801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333705111552201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333751112154501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333756112110201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_333844112144501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334030112260601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334118113463501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334119112140901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334143111533701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334150111533901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334306112433801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334359111563401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334646111583301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334729113334201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334818113350001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_334822111515401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_335334113250701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_335718113480401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_340338112092701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_340908112533801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341118112075801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341336111174801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341356111191901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341402111215101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341442111200101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341535111213601__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341558111173301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341653112433501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_341817112060001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_342020112270101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_342024109220301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_342331112142501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343233112164901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343353112144101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343529112162201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343641112204202__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343641112204203__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343652112172101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343816109550401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343829112303501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343854112202701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_343906112154701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344029112143501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344038112194401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344134112223501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344314112202401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344357112280901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344359111591101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344507112263801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344520112194301__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344535112283001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344645112253401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344653112264901__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344819112265701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344912112264101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344917112273101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_344954114084501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345023110111401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345300112283701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345300112283702__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345300112283703__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345301112283701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345302112283701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345333109474501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345338112311801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345524112374401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345738112391501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_345842112380201__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_350633114103701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_350845110540101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_350848111381701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_351401114132401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_351552111434801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_351554113590701__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_352518113454001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_352555113462001__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_354027114273101__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_354208114282801__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_354551114085401__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_355855114043501__Transducer.png" />
+    <Content Include="Content\Images\Hydrographs\Hydrographs_GWSI_365321113572401__Transducer.png" />
+    <Content Include="Content\Images\Image_Unavailable.PNG" />
+    <Content Include="Content\Images\WaterBank\Agua_Fria_Constructed_USF_400_569776.9c42a884.jpg" />
+    <Content Include="Content\Images\WaterBank\Agua_Fria_Managed_Recharge_400_569775.55602fe7.jpg" />
+    <Content Include="Content\Images\WaterBank\Avra_Valley_USF_400_564896.0ee9feb4.jpg" />
+    <Content Include="Content\Images\WaterBank\BKW_Farms_GSF_400_538133.6186b8e1.jpg" />
+    <Content Include="Content\Images\WaterBank\CAVSARP_USF_400_578806.43ad0e4c.jpg" />
+    <Content Include="Content\Images\WaterBank\Central_Az_IDD_GSF_400_531382.4f977504.jpg" />
+    <Content Include="Content\Images\WaterBank\Cortaro_Marana_ID_GSF_400_538100.jpg" />
+    <Content Include="Content\Images\WaterBank\Granite_Reef_USP_USF_400_564896.ae5ef9d9.jpg" />
+    <Content Include="Content\Images\WaterBank\GRIDD_GSF_400_211277.d34c2e65.jpg" />
+    <Content Include="Content\Images\WaterBank\Hassayampa_Managed_Recharge_400_216387.e0b88dcf.jpg" />
+    <Content Include="Content\Images\WaterBank\Hieroglyphic_Mountains_USF_400_584466.d2d93139.jpg" />
+    <Content Include="Content\Images\WaterBank\Hohokam_IDD_GSF_400_534489.e0a66dfa.jpg" />
+    <Content Include="Content\Images\WaterBank\Kai_Farms_GSF_558092.jpg" />
+    <Content Include="Content\Images\WaterBank\Lower_Santa Cruz_USF_400_561366.ad0a4ad9.jpg" />
+    <Content Include="Content\Images\WaterBank\Lower_Santa_Cruz_Managed_USF_400_561366.331e1c74.jpg" />
+    <Content Include="Content\Images\WaterBank\Maricopa_Stanfield_GSF_400_531381.b811bd22.jpg" />
+    <Content Include="Content\Images\WaterBank\Maricopa_Stanfield_GSF_400_531381.jpg" />
+    <Content Include="Content\Images\WaterBank\Maricopa_Water_District_GSF_558246.jpg" />
+    <Content Include="Content\Images\WaterBank\New_Magma_IDD_GSF_400_534888.3c48d2ba.jpg" />
+    <Content Include="Content\Images\WaterBank\Pima_Mine_Road_USF_400_577501.59d90b21.jpg" />
+    <Content Include="Content\Images\WaterBank\Queen_Creek_IDD_GSF_400_534550.ceb50eca.jpg" />
+    <Content Include="Content\Images\WaterBank\Roosevelt_Water_Conservation_District_GSF_545695.jpg" />
+    <Content Include="Content\Images\WaterBank\SAVSARP_USF_400_211276.7090e33d.jpg" />
+    <Content Include="Content\Images\WaterBank\SRP_GSF_400_553133.0f3b497c.png" />
+    <Content Include="Content\Images\WaterBank\Superstition_Mountains_USF_400_207702.c4cb6d6f.jpg" />
+    <Content Include="Content\Images\WaterBank\Tonopah_Desert_USF_400_593305.jpg" />
+    <Content Include="Content\Images\WaterBank\Tonopah_ID_aerial_view_400_534439.b166f8e4.png" />
+    <Content Include="Content\Images\WaterBank\waterBankLogo.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Compile Include="Models\Analytics\AnnualReportData.cs" />
+    <Compile Include="Models\WellsHub\WellsHub_View.cs" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libman.json" />
+    <Content Include="MapConfig\wellreg.json" />
+    <Content Include="MapConfig\template.json" />
+    <Content Include="MapConfig\aaws.json" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <None Include="MapConfig\waterbank.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Views\Analytics\" />
+    <Folder Include="Views\GIS\" />
+    <Folder Include="Views\Hydrograph\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

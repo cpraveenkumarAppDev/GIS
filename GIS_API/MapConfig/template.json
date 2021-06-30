@@ -1,0 +1,87 @@
+﻿{
+  "portalId": "67f20a367c0a4023a789a32dd9970e57",
+  "portalUrl": "https://gisweb3.azwater.gov/portal",
+  "logo": null,
+  "agency": "Arizona Department of Water Resources",
+  "name": "GIS Template",
+  "title": "GIS Template",
+  "searchSources": [
+    {
+      "title": "Well Registry",
+      "searchFields": [
+        "REGISTRY_ID",
+        "OWNER_NAME"
+      ]
+    },
+    {
+      "title": "AMA & INA",
+      "searchFields": [
+        "BASIN_NAME"
+      ]
+    },
+    {
+      "title": "County",
+      "searchFields": [
+        "NAME"
+      ]
+    },
+    {
+      "title": "ArcGIS World Geocoding Service"
+    }
+  ],
+  "TRS": {
+    "cadastral": "https://gisweb3.azwater.gov/arcgis/rest/services/General/Boundaries/MapServer/0",
+    "section": "https://gisweb3.azwater.gov/arcgis/rest/services/General/Boundaries/MapServer/1"
+  },
+  "bufferSources": [
+    {
+      "title": "Well Registry",
+      "searchFields": [
+        "REGISTRY_ID",
+        "OWNER_NAME"
+      ]
+    },
+    {
+      "title": "Address"
+    },
+    {
+      "title": "Cadastral",
+      "searchFields": [
+        "CAD_HOOK"
+      ]
+    },
+    {
+      "title": "Parcels",
+      "layers": [
+        {
+          "title": "Pima",
+          "searchFields": [
+            "APN"
+          ]
+        },
+        {
+          "title": "Pinal",
+          "searchFields": [
+            "APN"
+          ]
+        }
+      ]
+    }
+  ],
+  "query": [
+    {
+      "title": "Well Registry",
+      "urlParam": "registry_id"
+    },
+    {
+      "title": "GWSI"
+    }
+  ],
+  "links": {
+    "detailsGWSI": "http://gisweb.azwater.gov/GWSI/Detail.aspx?SiteID=",
+    "detailsWellReg": "http://gisweb.azwater.gov/WellRegistry/Detail.aspx?RegID=",
+    "imagedRecordWellReg": "https://dwrsrvc.azwater.gov/dsapi/api/WellRegDoc/AllDocs/?registryNum=",
+    "imagedRecordWells35": "https://dwrsrvc.azwater.gov/dsapi/api/WellRegDoc/getwell35docs/?registry=",
+    "imagedRecordSOC": "https://dwrsrvc.azwater.gov/dsapi/api/SOC/?fileNumber="
+  }
+}

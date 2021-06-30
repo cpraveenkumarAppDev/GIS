@@ -1,0 +1,23 @@
+﻿{
+  "portalId": "94236886d3864aef8d6673fd230e3718",
+  "portalUrl": "https://gisweb3.azwater.gov/portal",
+  "name": "Registry of Wells in Arizona (Wells 55)",
+  "searchSources": [
+    {
+      "title": "Well Registry",
+      "searchFields": [
+        "REGISTRY_ID",
+        "OWNER_NAME"
+      ]
+    },
+    {
+      "title": "Section",
+      "searchFields": [
+        "SECTION_HO"
+      ]
+    },
+    {
+      "title": "ArcGIS World Geocoding Service"
+    }
+  ]
+}

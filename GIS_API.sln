@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GIS_API", "GIS_API\GIS_API.csproj", "{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedUtilities", "..\..\..\VisualStudio 2017\SharedUtilities\SharedUtilities\SharedUtilities.csproj", "{5B550D77-CC00-4255-ADED-9A4E1281E69F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Production_CWS|Any CPU = Production_CWS|Any CPU
+		Production|Any CPU = Production|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+		Web.CWS.Production.config|Any CPU = Web.CWS.Production.config|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Production_CWS|Any CPU.ActiveCfg = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Production_CWS|Any CPU.Build.0 = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Production|Any CPU.Build.0 = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Test|Any CPU.Build.0 = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Web.CWS.Production.config|Any CPU.ActiveCfg = Release|Any CPU
+		{D2588E91-76B6-4D6E-B8FC-0D9D700C2078}.Web.CWS.Production.config|Any CPU.Build.0 = Release|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Production_CWS|Any CPU.ActiveCfg = Production_CWS|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Production_CWS|Any CPU.Build.0 = Production_CWS|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Production|Any CPU.Build.0 = Production|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Test|Any CPU.Build.0 = Test|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Web.CWS.Production.config|Any CPU.ActiveCfg = Web.CWS.Production.config|Any CPU
+		{5B550D77-CC00-4255-ADED-9A4E1281E69F}.Web.CWS.Production.config|Any CPU.Build.0 = Web.CWS.Production.config|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E113E886-7060-4F59-BEA0-07822A7A47FF}
+	EndGlobalSection
+EndGlobal

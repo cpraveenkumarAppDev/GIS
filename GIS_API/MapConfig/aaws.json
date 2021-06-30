@@ -1,0 +1,90 @@
+﻿{
+  "portalId": "0ae0715c206041068b986fe1108d9c97",
+  "portalUrl": "https://gisweb3.azwater.gov/portal",
+  "logo": null,
+  "agency": "Arizona Department of Water Resources",
+  "name": "AAWS",
+  "title": "AAWS",
+  "searchSources": [
+    {
+      "id": "Facilities_8806",
+      "title": "Underground Storage Facility",
+      "searchFields": [
+        "CERTIFICATE",
+        "NAME",
+        "MAP_LABEL"
+      ]
+    },
+    {
+      "id": "Facilities_7095",
+      "title": "Groundwater Savings Facility",
+      "searchFields": [
+        "CERTIFICATE",
+        "NAME"
+      ]
+    },
+    {
+      "id": "AAWS_Issued_Determination_4809",
+      "title": "AAWS Issued Determination",
+      "searchFields": [
+        "FILE_NO"
+      ]
+    },
+    {
+      "id": "Muni_4597",
+      "title": "CC&N",
+      "searchFields": [
+        "NAME"
+      ]
+    },
+    {
+      "id": "WellRegistry_4423",
+      "title": "Pumping or Recovery Well",
+      "searchFields": [
+        "REGISTRY_ID"
+      ]
+    },
+    {
+      "title": "ArcGIS World Geocoding Service"
+    }
+  ],
+  "TRS": {
+    "cadastral": "https://gisweb3.azwater.gov/arcgis/rest/services/General/Boundaries/MapServer/0",
+    "section": "https://gisweb3.azwater.gov/arcgis/rest/services/General/Boundaries/MapServer/1"
+  },
+  "bufferSources": [
+    {
+      "id": "WellRegistry_4423",
+      "title": "Pumping or Recovery Well",
+      "searchFields": [
+        "REGISTRY_ID"
+      ]
+    },
+    {
+      "title": "Address"
+    },
+    {
+      "id": "Boundaries_4828",
+      "title": "Cadastral",
+      "searchFields": [
+        "CAD_HOOK"
+      ]
+    }
+  ],
+  "query": [
+    {
+      "id": "WellRegistry_4423",
+      "title": "Pumping or Recovery Well",
+      "searchFields": [
+        "REGISTRY_ID"
+      ]
+    }
+  ],
+  "links": {
+    "detailsGWSI": "http://gisweb.azwater.gov/GWSI/Detail.aspx?SiteID=",
+    "detailsWellReg": "http://gisweb.azwater.gov/WellRegistry/Detail.aspx?RegID=",
+    "imagedRecordWellReg": "https://dwrsrvc.azwater.gov/dsapi/api/WellRegDoc/AllDocs/?registryNum=",
+    "imagedRecordWells35": "https://dwrsrvc.azwater.gov/dsapi/api/WellRegDoc/getwell35docs/?registry=",
+    "imagedRecordSOC": "https://dwrsrvc.azwater.gov/dsapi/api/SOC/?fileNumber="
+  }
+}
