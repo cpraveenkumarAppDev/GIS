@@ -1,0 +1,30 @@
+﻿{
+  "appId": "8V2r1Kxf70Qxp0HL",
+  "portalId": "cc93fedce5244125b370623b58e304ad",
+  "portalUrl": "https://azwatermaps.azwater.gov/portal",
+  "active": true,
+  "logo": null,
+  "agency": "Arizona Department of Water Resources",
+  "title": "Surface Water",
+  "tabName": "Surface Water",
+  "searchSources": [],
+  "TRS": {},
+  "bufferSources": [],
+  "query": [
+    {
+      "title": "Section",
+      "urlKey": "SECTION_HO"
+    },
+    {
+      "title": "QQQ",
+      "urlKey": "CADHOOK"
+    }
+  ],
+  "links": {
+    "detailsGWSI": "http://gisweb.azwater.gov/GWSI/Detail.aspx?SiteID=",
+    "detailsWellReg": "http://gisweb.azwater.gov/WellRegistry/Detail.aspx?RegID=",
+    "imagedRecordWellReg": "https://dwrsrvc.azwater.gov/dsapi/api/WellRegDoc/AllDocs/?registryNum=",
+    "imagedRecordWells35": "https://dwrsrvc.azwater.gov/dsapi/api/WellRegDoc/getwell35docs/?registry=",
+    "imagedRecordSOC": "https://dwrsrvc.azwater.gov/dsapi/api/SOC/?fileNumber="
+  }
+}

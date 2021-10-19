@@ -1,0 +1,35 @@
+﻿{
+  "portalId": "622d8dc7e49e47e3a1b9d34e87188099",
+  "portalUrl": "https://azwatermaps.azwater.gov/portal",
+  "appId": "VvJxuLCWUPN7kOwn",
+  "logo": null,
+  "agency": "Arizona Department of Water Resources",
+  "title": "Recovery",
+  "tabName": "Recovery",
+  "active": true,
+  "searchSources": [],
+  "bufferSources": [
+    {
+      "title": "Well Registry",
+      "searchFields": [
+        "REGISTRY_ID"
+      ]
+    }
+  ],
+  "query": [
+    {
+      "title": "Municipal Service Area"
+    },
+    {
+      "title": "Irrigation District"
+    }
+  ],
+  "wellsUrl": "https://gisweb3.azwater.gov/arcgis/rest/services/Wells/WellRegistry/MapServer/2",
+  "links": {
+    "detailsGWSI": "http://gisweb.azwater.gov/GWSI/Detail.aspx?SiteID=",
+    "detailsWellReg": "http://gisweb.azwater.gov/WellRegistry/Detail.aspx?RegID=",
+    "imagedRecordWellReg": "https://dwrsrvc.azwater.gov/dsapi/api/WellRegDoc/AllDocs/?registryNum=",
+    "imagedRecordWells35": "https://dwrsrvc.azwater.gov/dsapi/api/WellRegDoc/getwell35docs/?registry=",
+    "imagedRecordSOC": "https://dwrsrvc.azwater.gov/dsapi/api/SOC/?fileNumber="
+  }
+}

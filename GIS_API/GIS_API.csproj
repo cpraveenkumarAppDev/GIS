@@ -587,7 +587,15 @@
     <Content Include="MapConfig\wellreg.json" />
     <Content Include="MapConfig\template.json" />
     <Content Include="MapConfig\aaws.json" />
+    <Content Include="MapConfig\gwsi.json" />
+    <Content Include="MapConfig\recovery.json" />
+    <Content Include="MapConfig\surfacewater.json" />
+    <Content Include="MapConfig\communitywater.json" />
+    <Content Include="MapConfig\igfr.json" />
+    <Content Include="MapConfig\ais.json" />
+    <Content Include="MapConfig\example.json" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

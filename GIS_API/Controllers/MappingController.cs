@@ -27,9 +27,36 @@ namespace GIS_API.Controllers
     public class MappingController : ApiController
     {
         [System.Web.Http.HttpGet]
-        [System.Web.Http.Route("api/mapping/config/{id}")]
-        public HttpResponseMessage Config(string id)
+        [System.Web.Http.Route("api/mapping/config/{id}/{env?}")]
+        public HttpResponseMessage Config(string id,  string env="")
         {
+            DateTime todaysDate = System.DateTime.Now;
+            var dataExists = GISWebData.GetDataCollection(p => DbFunctions.TruncateTime(p.LOGGED_DATE) == DbFunctions.TruncateTime(todaysDate) && p.APPLICATION_NAME == id.ToUpper() && p.ENVIRONMENT == env, new OracleDataCollectionContext());
+            if (dataExists == null)
+            {
+                using (var myDb = new OracleDataCollectionContext())
+                {
+                    var newRecord = new GISWebData
+                    {
+                        APPLICATION_NAME = id.ToUpper(),
+                        ENVIRONMENT = env
+                    };
+                    myDb.GISWebData.Add(newRecord);
+                    myDb.Entry(newRecord).State = EntityState.Added; //this is for modiying/update existing entry
+                    myDb.SaveChanges();
+                };
+
+            }
+            else
+            {
+                using (var myDb = new OracleDataCollectionContext())
+                {
+                    dataExists.USERS_COUNT = dataExists.USERS_COUNT + 1;
+                    myDb.GISWebData.Add(dataExists);
+                    myDb.Entry(dataExists).State = EntityState.Modified; //this is for modiying/update existing entry
+                    myDb.SaveChanges();
+                };
+            }
             var json = File.ReadAllText(HttpContext.Current.Server.MapPath(@"~/MapConfig/" + id + ".json"));
 
             return new HttpResponseMessage()
@@ -141,7 +168,7 @@ namespace GIS_API.Controllers
 
         [System.Web.Http.HttpGet]
         [System.Web.Http.Route("api/mapping/wellshubAuthentication")]
-        [System.Web.Http.Authorize]
+        //[System.Web.Http.Authorize]
         public IHttpActionResult wellshubAuthentication()
         {
 
@@ -206,13 +233,17 @@ namespace GIS_API.Controllers
         [System.Web.Http.Route("api/mapping/recoverybuffer/{id}")]
         public IHttpActionResult RecoveryBuffer(string id)
         {
+
             var qryString = "select OBJECTID, WATER_NAME, IRRI_NAME, FILENO from " +
-            "(select distinct irri.OBJECTID, null as WATER_NAME, LONG_NAME as IRRI_NAME, FILENO from wells.wellregistry t, rgr.irrigationdistrict_dissolve irri where t.registry_id in (" + id + ") and sde.st_intersects(sde.st_buffer(t.shape, 3, 'mile'), irri.shape) = 1 " +
-            " union select distinct muni.OBJECTID as ID, NAME as WATER_NAME, null, FILENO from wells.wellregistry t, rgr.muniserviceareas muni where t.registry_id in (" + id + ") and sde.st_intersects(sde.st_buffer(t.shape, 3, 'mile'), muni.shape) = 1) ";
+            "(select distinct irri.OBJECTID, null as WATER_NAME, LONG_NAME as IRRI_NAME, FILENO from wells.wellregistry t, rgr.irrigationdistrict_dissolve irri where t.registry_id in " + id + " and sde.st_intersects(sde.st_buffer(t.shape, 3, 'mile'), irri.shape) = 1 " +
+            " union select distinct muni.OBJECTID as ID, NAME as WATER_NAME, null, FILENO from wells.wellregistry t, rgr.muniserviceareas muni where t.registry_id in " + id + " and sde.st_intersects(sde.st_buffer(t.shape, 3, 'mile'), muni.shape) = 1) ";
 
             var recoveryData = Models.QueryResult.RunAnyQuery(qryString);
             return Ok(recoveryData);
         }
-
+       
     }
 }
+
+
+

@@ -1,0 +1,46 @@
+﻿{
+  "portalId": "20afc2ece4054f75b23849f47083762e",
+  "portalUrl": "https://gisweb3.azwater.gov/portal",
+  "logo": null,
+  "agency": "Arizona Department of Water Resources",
+  "title": "IGFR",
+  "tabName": "IGFR",
+  "active": true,
+  "searchSources": [
+    {
+      "title": "Groundwater Use Right 58",
+      "prefix": "58-",
+      "searchFields": [
+        "MAP_LABEL",
+        "OWNER"
+      ]
+    },
+    {
+      "title": "Irrigation Authority Use Right 60",
+      "prefix": "60-",
+      "searchFields": [
+        "MAP_LABEL",
+        "OWNER"
+      ]
+    },
+    {
+      "title": "Pima Parcels",
+      "searchFields": [
+        "APN"
+      ]
+    },
+    {
+      "title": "Pinal Parcels",
+      "searchFields": [
+        "APN"
+      ]
+    },
+    {
+      "title": "ArcGIS World Geocoding Service"
+    }
+  ],
+  "bufferSources": [],
+  "query": [],
+  "links": {
+  }
+}

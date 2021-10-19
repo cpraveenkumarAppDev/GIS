@@ -205,8 +205,8 @@ C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\bin\Microsoft.AI.DependencyC
 C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\bin\Microsoft.AI.WindowsServer.xml
 C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\bin\Microsoft.AI.Web.xml
 C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\obj\Debug\GIS_API.csprojAssemblyReference.cache
 C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\obj\Debug\GIS_API.csproj.CoreCompileInputs.cache
 C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\obj\Debug\GIS_API.csproj.CopyComplete
 C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\obj\Debug\GIS_API.dll
 C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\obj\Debug\GIS_API.pdb
+C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\obj\Debug\GIS_API.csprojAssemblyReference.cache

@@ -1,9 +1,10 @@
 ﻿{
-  "portalId": "2f5add9f04cf4aa5bc8db75773e89011",
-  "portalUrl": "https://gisweb3.azwater.gov/portal",
-  "logo": "https://localhost:44304/Content/Images/WaterBank/waterBankLogo.png",
+  "webmapId": "ee49dfe62b0443128bbef4eb232e0273",
+  "logo": "https://azwatermaps.azwater.gov/waterbank/static/media/waterBankLogo.e0f9af6e.png",
   "agency": "Arizona Water Banking Authority",
-  "name": "WaterBank GIS",
+  "title": "WaterBank GIS",
+  "tabName": "WaterBank GIS",
+  "active": true,
   "searchSources": [
     {
       "title": "Water Bank Storage Facilities",
@@ -27,6 +28,9 @@
       "title": "ArcGIS World Geocoding Service"
     }
   ],
-  "usfUrl": "https://gisweb3.azwater.gov/arcgis/rest/services/Recharge/USF_Recharge_Dissolve/MapServer/0",
-  "gsfUrl": "https://gisweb3.azwater.gov/arcgis/rest/services/Recharge/GSF_Recharge_Dissolve/MapServer/0"
+  "bufferSources": [],
+  "query": [],
+  "links": {},
+  "gsfUrl": "https://gisweb3.azwater.gov/arcgis/rest/services/Recharge/GSF_Recharge_Dissolve/MapServer/0",
+  "usfUrl": "https://gisweb3.azwater.gov/arcgis/rest/services/Recharge/USF_Recharge_Dissolve/MapServer/0"
 }

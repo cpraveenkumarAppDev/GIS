@@ -6,7 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Development\GIS\Projects\GIS_API\GIS_API\bin\Release\Publish</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Development\VisualStudio\Webmaps\GIS-API\GIS_API\bin\Release\Publish</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -91,13 +91,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/01/2019 10:06:11</publishTime>
     </File>
     <File Include="bin/GIS_API.dll">
-      <publishTime>02/02/2021 09:45:51</publishTime>
+      <publishTime>09/23/2021 11:11:22</publishTime>
     </File>
     <File Include="bin/GIS_API.dll.config">
       <publishTime>11/26/2019 15:01:05</publishTime>
     </File>
     <File Include="bin/GIS_API.pdb">
-      <publishTime>02/02/2021 09:45:51</publishTime>
+      <publishTime>09/23/2021 11:11:22</publishTime>
     </File>
     <File Include="bin/itextsharp.dll">
       <publishTime>01/22/2018 18:40:38</publishTime>
@@ -2127,6 +2127,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Content/Images/WaterBank/Tonopah_ID_aerial_view_400_534439.b166f8e4.png">
       <publishTime>05/06/2020 13:29:43</publishTime>
     </File>
+    <File Include="Content/Images/WaterBank/waterBankLogo.png">
+      <publishTime>06/05/2020 08:32:16</publishTime>
+    </File>
     <File Include="Content/Site.css">
       <publishTime>10/01/2019 10:05:47</publishTime>
     </File>
@@ -2153,6 +2156,30 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="libman.json">
       <publishTime>01/03/2020 16:34:03</publishTime>
+    </File>
+    <File Include="MapConfig/aaws.json">
+      <publishTime>08/26/2021 13:16:58</publishTime>
+    </File>
+    <File Include="MapConfig/communitywater.json">
+      <publishTime>08/19/2021 12:45:43</publishTime>
+    </File>
+    <File Include="MapConfig/gwsi.json">
+      <publishTime>09/09/2021 11:59:42</publishTime>
+    </File>
+    <File Include="MapConfig/igfr.json">
+      <publishTime>08/20/2021 07:50:44</publishTime>
+    </File>
+    <File Include="MapConfig/recovery.json">
+      <publishTime>09/23/2021 09:05:16</publishTime>
+    </File>
+    <File Include="MapConfig/surfacewater.json">
+      <publishTime>09/22/2021 14:13:28</publishTime>
+    </File>
+    <File Include="MapConfig/template.json">
+      <publishTime>08/13/2021 11:34:02</publishTime>
+    </File>
+    <File Include="MapConfig/wellreg.json">
+      <publishTime>07/02/2021 15:20:31</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>10/01/2019 10:05:48</publishTime>
@@ -2197,7 +2224,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/01/2019 10:05:48</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>10/08/2020 09:42:27</publishTime>
+      <publishTime>07/13/2021 10:02:23</publishTime>
     </File>
   </ItemGroup>
 </Project>

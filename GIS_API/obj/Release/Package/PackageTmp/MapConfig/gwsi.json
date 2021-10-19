@@ -1,0 +1,120 @@
+﻿{
+  "webmapId": "653ad51c632b4ded87006d8c5c4fc2cb",
+  "logo": null,
+  "agency": "Arizona Department of Water Resources",
+  "title": "GWSI",
+  "tabName": "GWSI",
+  "active": true,
+  "searchSources": [
+    {
+      "title": "ADWR Telemetry Sites",
+      "alias": "Site ID",
+      "template": "Site ID: {SITE_ID}||Local ID: {LOCAL_ID}",
+      "searchFields": [
+        "SITE_ID",
+        "LOCAL_ID"
+      ]
+    },
+    {
+      "title": "Well Registry (Wells 55)",
+      "alias": "Well registration number",
+      "template": "Well: 55-{REGISTRY_ID}||Owner: {OWNER_NAME}",
+      "searchFields": [
+        "REGISTRY_ID",
+        "OWNER_NAME"
+      ]
+    },
+    {
+      "title": "County",
+      "searchFields": [
+        "NAME"
+      ]
+    },
+    {
+      "title": "ArcGIS World Geocoding Service"
+    }
+  ],
+  "bufferSources": [
+    {
+      "title": "ADWR Telemetry Sites",
+      "alias": "Site ID",
+      "template": "Site ID: {SITE_ID}||Local ID: {LOCAL_ID}",
+      "searchFields": [
+        "SITE_ID",
+        "LOCAL_ID"
+      ]
+    },
+    {
+      "title": "Well Registry (Wells 55)",
+      "alias": "Well registration number",
+      "template": "Well: 55-{REGISTRY_ID}||Owner: {OWNER_NAME}",
+      "searchFields": [
+        "REGISTRY_ID",
+        "OWNER_NAME"
+      ]
+    },
+    {
+      "title": "County",
+      "searchFields": [
+        "NAME"
+      ]
+    },
+    {
+      "title": "ArcGIS World Geocoding Service"
+    }
+  ],
+  "query": [
+    {
+      "title": "ADWR Telemetry Sites",
+      "alias": "Site ID",
+      "template": "Site ID: {SITE_ID}||Local ID: {LOCAL_ID}",
+      "searchFields": [
+        "SITE_ID",
+        "LOCAL_ID"
+      ]
+    },
+    {
+      "title": "ADWR Non-Telemetry Sites",
+      "alias": "Site ID",
+      "template": "Site ID: {SITE_ID}||Local ID: {LOCAL_ID}",
+      "searchFields": [
+        "SITE_ID",
+        "LOCAL_ID"
+      ]
+    },
+    {
+      "title": "Active Index Sites",
+      "alias": "Site ID",
+      "template": "Site ID: {SITE_ID}||Local ID: {LOCAL_ID}",
+      "searchFields": [
+        "SITE_ID",
+        "LOCAL_ID"
+      ]
+    },
+    {
+      "title": "Inactive Index Sites",
+      "alias": "Site ID",
+      "template": "Site ID: {SITE_ID}||Local ID: {LOCAL_ID}",
+      "searchFields": [
+        "SITE_ID",
+        "LOCAL_ID"
+      ]
+    },
+    {
+      "title": "Well Registry (Wells 55)",
+      "alias": "Well registration number",
+      "template": "Well: 55-{REGISTRY_ID}||Owner: {OWNER_NAME}",
+      "searchFields": [
+        "REGISTRY_ID",
+        "OWNER_NAME"
+      ]
+    },
+    {
+      "title": "County",
+      "searchFields": [
+        "NAME"
+      ]
+    }
+  ],
+  "links": {}
+}

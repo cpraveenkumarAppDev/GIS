@@ -1,10 +1,11 @@
 ﻿{
-  "portalId": "67f20a367c0a4023a789a32dd9970e57",
+  "webmapId": "40877f398f564fa68a7daa23b49f04f0",
   "portalUrl": "https://gisweb3.azwater.gov/portal",
   "logo": null,
   "agency": "Arizona Department of Water Resources",
-  "name": "GIS Template",
   "title": "GIS Template",
+  "tabName": "GIS Template",
+  "active": true,
   "searchSources": [
     {
       "title": "Well Registry",
@@ -71,7 +72,7 @@
   "query": [
     {
       "title": "Well Registry",
-      "urlParam": "registry_id"
+      "urlKey": "registry_id"
     },
     {
       "title": "GWSI"

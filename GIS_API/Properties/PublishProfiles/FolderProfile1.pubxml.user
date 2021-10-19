@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\dwrgisportal\c$\inetpub\wwwroot\GIS_API</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>10/01/2019 10:05:46</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/01/2019 10:06:11</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>10/01/2019 10:06:11</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>10/01/2019 10:05:45</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/01/2019 10:06:11</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/01/2019 10:06:11</publishTime>
+    </File>
+    <File Include="bin/GIS_API.dll">
+      <publishTime>09/23/2021 11:27:11</publishTime>
+    </File>
+    <File Include="bin/GIS_API.pdb">
+      <publishTime>09/23/2021 11:27:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>10/01/2019 10:06:13</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>10/01/2019 10:06:13</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>10/01/2019 10:06:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>10/01/2019 10:06:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>10/01/2019 10:06:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>10/01/2019 10:06:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>10/01/2019 10:06:13</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.TelemetryCorrelation.dll">
+      <publishTime>10/01/2019 10:06:19</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/01/2019 10:06:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>10/01/2019 10:06:29</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/01/2019 10:06:30</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.dll">
+      <publishTime>10/01/2019 10:06:31</publishTime>
+    </File>
+    <File Include="bin/Oracle.ManagedDataAccess.EntityFramework.dll">
+      <publishTime>10/01/2019 10:06:31</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>10/01/2019 10:06:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>10/01/2019 10:06:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>10/01/2019 10:06:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>10/01/2019 10:06:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>10/01/2019 10:06:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>10/01/2019 10:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>10/01/2019 10:06:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>10/01/2019 10:06:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>10/01/2019 10:06:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>10/01/2019 10:06:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>10/01/2019 10:06:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>10/01/2019 10:06:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>10/01/2019 10:06:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>10/01/2019 10:06:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>10/01/2019 10:06:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>10/01/2019 10:06:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>10/01/2019 10:06:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>10/01/2019 10:06:28</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>10/01/2019 10:06:27</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>10/01/2019 10:06:32</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>10/01/2019 10:06:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>10/01/2019 10:06:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/01/2019 10:06:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>10/01/2019 10:06:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>10/01/2019 10:06:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>10/01/2019 10:06:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>10/01/2019 10:06:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>10/01/2019 10:06:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>10/01/2019 10:06:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/01/2019 10:06:20</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/01/2019 10:06:21</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>10/01/2019 10:06:20</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>10/01/2019 10:06:32</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>10/01/2019 10:05:47</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312204110575601__Transducer.png">
+      <publishTime>11/08/2019 02:09:37</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312230110503301__Transducer.png">
+      <publishTime>11/08/2019 02:07:10</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312238110583501__Transducer.png">
+      <publishTime>11/08/2019 02:02:47</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312258110510901__Transducer.png">
+      <publishTime>11/08/2019 02:05:26</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312308110580601__Transducer.png">
+      <publishTime>11/08/2019 02:06:54</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312316110522701__Transducer.png">
+      <publishTime>11/08/2019 02:06:05</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312320110574301__Transducer.png">
+      <publishTime>11/08/2019 02:03:14</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312320110574302__Transducer.png">
+      <publishTime>11/08/2019 02:03:17</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_312740110581301__Transducer.png">
+      <publishTime>11/08/2019 01:58:48</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313305111174901__Transducer.png">
+      <publishTime>11/08/2019 02:04:03</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313332109430001__Transducer.png">
+      <publishTime>11/08/2019 02:03:56</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313345111024801__Transducer.png">
+      <publishTime>11/08/2019 02:01:10</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313345111024802__Transducer.png">
+      <publishTime>11/08/2019 02:01:15</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313433111201601__Transducer.png">
+      <publishTime>11/08/2019 02:05:42</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313506111210901__Transducer.png">
+      <publishTime>11/08/2019 02:07:36</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313533109301801__Transducer.png">
+      <publishTime>11/08/2019 01:58:25</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313639110183501__Transducer.png">
+      <publishTime>11/08/2019 01:59:23</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_313735111023701__Transducer.png">
+      <publishTime>11/08/2019 01:59:27</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_314321111075001__Transducer.png">
+      <publishTime>11/08/2019 02:01:57</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_314454111023701__Transducer.png">
+      <publishTime>11/08/2019 01:59:32</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_314606111011301__Transducer.png">
+      <publishTime>11/08/2019 02:09:08</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_314940110212301__Transducer.png">
+      <publishTime>11/08/2019 02:02:45</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_315005110212501__Transducer.png">
+      <publishTime>11/08/2019 02:07:33</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_315019110203501__Transducer.png">
+      <publishTime>11/08/2019 01:59:52</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_315303109413701__Transducer.png">
+      <publishTime>11/08/2019 02:05:47</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_315614110543601__Transducer.png">
+      <publishTime>11/08/2019 02:03:53</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_315705110560901__Transducer.png">
+      <publishTime>11/08/2019 02:00:21</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_315724110460701__Transducer.png">
+      <publishTime>11/08/2019 02:04:58</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_315909110540601__Transducer.png">
+      <publishTime>11/08/2019 02:05:29</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_315953110490001__Transducer.png">
+      <publishTime>11/08/2019 02:07:24</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320029109221601__Transducer.png">
+      <publishTime>11/08/2019 02:03:19</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320105109382001__Transducer.png">
+      <publishTime>11/08/2019 02:06:41</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320143110563601__Transducer.png">
+      <publishTime>11/08/2019 02:04:43</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320150111164101__Transducer.png">
+      <publishTime>11/08/2019 02:02:35</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320213111212301__Transducer.png">
+      <publishTime>11/08/2019 02:04:31</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320216110405901__Transducer.png">
+      <publishTime>11/08/2019 02:04:35</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320249110413501__Transducer.png">
+      <publishTime>11/08/2019 02:02:10</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320252110571201__Transducer.png">
+      <publishTime>11/08/2019 02:02:16</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320441109453901__Transducer.png">
+      <publishTime>11/08/2019 01:59:13</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320540110573401__Transducer.png">
+      <publishTime>11/08/2019 02:06:16</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320609110440101__Transducer.png">
+      <publishTime>11/08/2019 02:01:27</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320616111125702__Transducer.png">
+      <publishTime>11/08/2019 02:02:29</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320620110572901__Transducer.png">
+      <publishTime>11/08/2019 02:06:36</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320656111160201__Transducer.png">
+      <publishTime>11/08/2019 02:07:18</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320726111002001__Transducer.png">
+      <publishTime>11/08/2019 02:07:26</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320824110593001__Transducer.png">
+      <publishTime>11/08/2019 02:09:40</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320843110551401__Transducer.png">
+      <publishTime>11/08/2019 02:06:38</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320901110175301__Transducer.png">
+      <publishTime>11/08/2019 01:58:59</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320943111123501__Transducer.png">
+      <publishTime>11/08/2019 01:58:26</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320944111125701__Transducer.png">
+      <publishTime>11/08/2019 02:02:21</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320944111132101__Transducer.png">
+      <publishTime>11/08/2019 02:08:34</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_320946110472101__Transducer.png">
+      <publishTime>11/08/2019 02:07:50</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321021111125801__Transducer.png">
+      <publishTime>11/08/2019 02:05:05</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321023110575201__Transducer.png">
+      <publishTime>11/08/2019 01:59:37</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321034111140801__Transducer.png">
+      <publishTime>11/08/2019 02:08:31</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321057111141601__Transducer.png">
+      <publishTime>11/08/2019 02:03:24</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321058110563301__Transducer.png">
+      <publishTime>11/08/2019 02:09:16</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321103110491401__Transducer.png">
+      <publishTime>11/08/2019 02:04:25</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321117111120301__Transducer.png">
+      <publishTime>11/08/2019 02:08:02</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321122110572501__Transducer.png">
+      <publishTime>11/08/2019 02:08:55</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321142110530301__Transducer.png">
+      <publishTime>11/08/2019 02:04:11</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321150110482502__Transducer.png">
+      <publishTime>11/08/2019 01:58:56</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321156110563301__Transducer.png">
+      <publishTime>11/08/2019 02:09:14</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321157110515901__Transducer.png">
+      <publishTime>11/08/2019 02:02:03</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321202110553001__Transducer.png">
+      <publishTime>11/08/2019 02:07:56</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321202110571201__Transducer.png">
+      <publishTime>11/08/2019 02:02:12</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321208110525001__Transducer.png">
+      <publishTime>11/08/2019 01:59:10</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321209110534101__Transducer.png">
+      <publishTime>11/08/2019 02:08:57</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321221110522201__Transducer.png">
+      <publishTime>11/08/2019 02:06:26</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321236110521201__Transducer.png">
+      <publishTime>11/08/2019 02:06:45</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321239110472501__Transducer.png">
+      <publishTime>11/08/2019 02:05:23</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321239110560701__Transducer.png">
+      <publishTime>11/08/2019 02:08:27</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321240110531301__Transducer.png">
+      <publishTime>11/08/2019 02:03:29</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321244110504401__Transducer.png">
+      <publishTime>11/08/2019 02:08:50</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321254110485601__Transducer.png">
+      <publishTime>11/08/2019 01:59:41</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321257110541801__Transducer.png">
+      <publishTime>11/08/2019 02:09:33</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321302110530801__Transducer.png">
+      <publishTime>11/08/2019 02:03:49</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321310111150001__Transducer.png">
+      <publishTime>11/08/2019 02:08:14</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321311110480401__Transducer.png">
+      <publishTime>11/08/2019 01:57:52</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321324110563601__Transducer.png">
+      <publishTime>11/08/2019 02:04:47</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321329110563701__Transducer.png">
+      <publishTime>11/08/2019 02:06:47</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321330110532301__Transducer.png">
+      <publishTime>11/08/2019 02:02:46</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321333110504601__Transducer.png">
+      <publishTime>11/08/2019 02:00:59</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321335110500301__Transducer.png">
+      <publishTime>11/08/2019 02:08:38</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321341110462601__Transducer.png">
+      <publishTime>11/08/2019 02:00:34</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321344110475501__Transducer.png">
+      <publishTime>11/08/2019 02:03:47</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321345110552501__Transducer.png">
+      <publishTime>11/08/2019 02:08:16</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321345111143601__Transducer.png">
+      <publishTime>11/08/2019 02:01:50</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321346110521001__Transducer.png">
+      <publishTime>11/08/2019 02:01:37</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321346110553201__Transducer.png">
+      <publishTime>11/08/2019 01:59:59</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321348111154401__Transducer.png">
+      <publishTime>11/08/2019 02:03:39</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321403111135401__Transducer.png">
+      <publishTime>11/08/2019 02:01:43</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321404111145401__Transducer.png">
+      <publishTime>11/08/2019 02:08:22</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321404111153201__Transducer.png">
+      <publishTime>11/08/2019 01:58:34</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321405110511401__Transducer.png">
+      <publishTime>11/08/2019 02:05:12</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321407110520501__Transducer.png">
+      <publishTime>11/08/2019 02:01:51</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321414110472301__Transducer.png">
+      <publishTime>11/08/2019 01:59:55</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321414111133601__Transducer.png">
+      <publishTime>11/08/2019 02:07:48</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321418110462401__Transducer.png">
+      <publishTime>11/08/2019 02:08:28</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321419110462101__Transducer.png">
+      <publishTime>11/08/2019 02:00:50</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321424110432901__Transducer.png">
+      <publishTime>11/08/2019 02:00:24</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321424110482301__Transducer.png">
+      <publishTime>11/08/2019 02:07:00</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321431110574801__Transducer.png">
+      <publishTime>11/08/2019 02:02:50</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321432110574901__Transducer.png">
+      <publishTime>11/08/2019 02:05:27</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321436110452001__Transducer.png">
+      <publishTime>11/08/2019 02:05:03</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321443110531301__Transducer.png">
+      <publishTime>11/08/2019 02:03:31</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321445110554601__Transducer.png">
+      <publishTime>11/08/2019 02:09:35</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321452110543801__Transducer.png">
+      <publishTime>11/08/2019 02:08:21</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321455110511901__Transducer.png">
+      <publishTime>11/08/2019 02:04:59</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321455111154101__Transducer.png">
+      <publishTime>11/08/2019 02:08:17</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321456111160201__Transducer.png">
+      <publishTime>11/08/2019 02:07:17</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321503110484901__Transducer.png">
+      <publishTime>11/08/2019 02:07:52</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321503111152601__Transducer.png">
+      <publishTime>11/08/2019 02:08:59</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321504110521601__Transducer.png">
+      <publishTime>11/08/2019 02:04:17</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321504110575001__Transducer.png">
+      <publishTime>11/08/2019 02:07:42</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321505110551501__Transducer.png">
+      <publishTime>11/08/2019 02:08:37</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321505111002601__Transducer.png">
+      <publishTime>11/08/2019 02:09:22</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321509110462501__Transducer.png">
+      <publishTime>11/08/2019 01:58:22</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321512110480701__Transducer.png">
+      <publishTime>11/08/2019 02:05:37</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321518110540601__Transducer.png">
+      <publishTime>11/08/2019 02:05:31</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321518110552301__Transducer.png">
+      <publishTime>11/08/2019 02:03:46</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321519110571501__Transducer.png">
+      <publishTime>11/08/2019 02:09:31</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321523110491801__Transducer.png">
+      <publishTime>11/08/2019 02:01:01</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321530110523501__Transducer.png">
+      <publishTime>11/08/2019 01:59:54</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321531111152401__Transducer.png">
+      <publishTime>11/08/2019 02:04:40</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321534110522201__Transducer.png">
+      <publishTime>11/08/2019 02:06:11</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321536110520201__Transducer.png">
+      <publishTime>11/08/2019 02:07:15</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321537110585001__Transducer.png">
+      <publishTime>11/08/2019 02:01:33</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321542110502701__Transducer.png">
+      <publishTime>11/08/2019 02:05:15</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321545110473601__Transducer.png">
+      <publishTime>11/08/2019 02:07:03</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321548110561801__Transducer.png">
+      <publishTime>11/08/2019 01:57:39</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321548111160301__Transducer.png">
+      <publishTime>11/08/2019 02:09:28</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321549110535601__Transducer.png">
+      <publishTime>11/08/2019 02:08:08</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321557110503401__Transducer.png">
+      <publishTime>11/08/2019 02:09:20</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321559110573401__Transducer.png">
+      <publishTime>11/08/2019 02:06:18</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321601110544601__Transducer.png">
+      <publishTime>11/08/2019 02:03:03</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321606110503501__Transducer.png">
+      <publishTime>11/08/2019 01:59:19</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321615110532901__Transducer.png">
+      <publishTime>11/08/2019 02:05:04</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321638110541401__Transducer.png">
+      <publishTime>11/08/2019 01:59:34</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321639111173801__Transducer.png">
+      <publishTime>11/08/2019 02:01:36</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321647110532201__Transducer.png">
+      <publishTime>11/08/2019 01:59:49</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321647110563301__Transducer.png">
+      <publishTime>11/08/2019 02:01:46</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321659110560001__Transducer.png">
+      <publishTime>11/08/2019 02:04:19</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321703110575401__Transducer.png">
+      <publishTime>11/08/2019 02:05:07</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321706110442201__Transducer.png">
+      <publishTime>11/08/2019 02:03:10</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321721110561001__Transducer.png">
+      <publishTime>11/08/2019 02:03:44</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321742110585301__Transducer.png">
+      <publishTime>11/08/2019 02:08:56</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321745111012801__Transducer.png">
+      <publishTime>11/08/2019 02:08:33</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321747110585901__Transducer.png">
+      <publishTime>11/08/2019 01:58:27</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321748110582101__Transducer.png">
+      <publishTime>11/08/2019 02:06:10</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_321812109264401__Transducer.png">
+      <publishTime>11/08/2019 01:57:49</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_322009111191801__Transducer.png">
+      <publishTime>11/08/2019 02:04:08</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_322200111060401__Transducer.png">
+      <publishTime>11/08/2019 02:08:06</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_322238111065701__Transducer.png">
+      <publishTime>11/08/2019 01:59:47</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_322337111165301__Transducer.png">
+      <publishTime>11/08/2019 02:06:46</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_322339111170001__Transducer.png">
+      <publishTime>11/08/2019 02:08:53</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_322407110574101__Transducer.png">
+      <publishTime>11/08/2019 01:58:01</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_322916111181701__Transducer.png">
+      <publishTime>11/08/2019 02:07:06</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_323635111330001__Transducer.png">
+      <publishTime>11/08/2019 02:02:57</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_324113109415401__Transducer.png">
+      <publishTime>11/08/2019 02:09:26</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_324626111425001__Transducer.png">
+      <publishTime>11/08/2019 02:09:19</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_325117111342801__Transducer.png">
+      <publishTime>11/08/2019 02:02:54</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_325656112064801__Transducer.png">
+      <publishTime>11/08/2019 02:05:01</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_330652111262001__Transducer.png">
+      <publishTime>11/08/2019 02:05:21</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_330725113260201__Transducer.png">
+      <publishTime>11/08/2019 02:01:31</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_331008112410801__Transducer.png">
+      <publishTime>11/08/2019 02:01:48</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_331446111380001__Transducer.png">
+      <publishTime>11/08/2019 01:58:15</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_331846112391501__Transducer.png">
+      <publishTime>11/08/2019 02:06:08</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332008111495801__Transducer.png">
+      <publishTime>11/08/2019 02:00:07</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332101112345301__Transducer.png">
+      <publishTime>11/08/2019 02:02:59</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332102112291201__Transducer.png">
+      <publishTime>11/08/2019 02:07:02</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332137112490001__Transducer.png">
+      <publishTime>11/08/2019 01:57:46</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332148113073401__Transducer.png">
+      <publishTime>11/08/2019 02:04:06</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332236112422901__Transducer.png">
+      <publishTime>11/08/2019 02:09:46</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332241110461201__Transducer.png">
+      <publishTime>11/08/2019 02:04:46</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332328112253601__Transducer.png">
+      <publishTime>11/08/2019 02:01:12</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332346111512801__Transducer.png">
+      <publishTime>11/08/2019 02:03:23</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332423112070201__Transducer.png">
+      <publishTime>11/08/2019 01:58:50</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332452112335001__Transducer.png">
+      <publishTime>11/08/2019 02:00:57</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332549111432601__Transducer.png">
+      <publishTime>11/08/2019 02:07:40</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332648112454301__Transducer.png">
+      <publishTime>11/08/2019 02:01:04</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332711111482601__Transducer.png">
+      <publishTime>11/08/2019 02:03:43</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332740111594301__Transducer.png">
+      <publishTime>11/08/2019 02:05:34</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332745112404501__Transducer.png">
+      <publishTime>11/08/2019 01:57:56</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332747112041101__Transducer.png">
+      <publishTime>11/08/2019 02:00:37</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332855111535901__Transducer.png">
+      <publishTime>11/08/2019 02:04:55</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332902112083101__Transducer.png">
+      <publishTime>11/08/2019 02:01:07</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332938112093401__Transducer.png">
+      <publishTime>11/08/2019 02:03:07</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_332950112565701__Transducer.png">
+      <publishTime>11/08/2019 02:08:35</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333121112250201__Transducer.png">
+      <publishTime>11/08/2019 02:06:14</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333135112032501__Transducer.png">
+      <publishTime>11/08/2019 02:04:00</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333135112240201__Transducer.png">
+      <publishTime>11/08/2019 01:59:07</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333248111535801__Transducer.png">
+      <publishTime>11/08/2019 02:02:02</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333301113182601__Transducer.png">
+      <publishTime>11/08/2019 02:07:13</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333304112240401__Transducer.png">
+      <publishTime>11/08/2019 02:04:39</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333347112080401__Transducer.png">
+      <publishTime>11/08/2019 01:58:05</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333434112063201__Transducer.png">
+      <publishTime>11/08/2019 02:03:27</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333448111542801__Transducer.png">
+      <publishTime>11/08/2019 01:57:42</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333539112172001__Transducer.png">
+      <publishTime>11/08/2019 02:09:05</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333546112064001__Transducer.png">
+      <publishTime>11/08/2019 01:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333550112080401__Transducer.png">
+      <publishTime>11/08/2019 01:57:59</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333703112091801__Transducer.png">
+      <publishTime>11/08/2019 02:00:54</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333705111552201__Transducer.png">
+      <publishTime>11/08/2019 02:02:33</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333751112154501__Transducer.png">
+      <publishTime>11/08/2019 02:07:05</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333756112110201__Transducer.png">
+      <publishTime>11/08/2019 02:00:13</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_333844112144501__Transducer.png">
+      <publishTime>11/08/2019 02:00:03</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334030112260601__Transducer.png">
+      <publishTime>11/08/2019 02:09:48</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334118113463501__Transducer.png">
+      <publishTime>11/08/2019 02:02:42</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334119112140901__Transducer.png">
+      <publishTime>11/08/2019 01:59:45</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334143111533701__Transducer.png">
+      <publishTime>11/08/2019 02:00:25</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334150111533901__Transducer.png">
+      <publishTime>11/08/2019 02:05:58</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334306112433801__Transducer.png">
+      <publishTime>11/08/2019 02:00:29</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334359111563401__Transducer.png">
+      <publishTime>11/08/2019 02:00:33</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334646111583301__Transducer.png">
+      <publishTime>11/08/2019 01:58:54</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334729113334201__Transducer.png">
+      <publishTime>11/08/2019 02:08:25</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334818113350001__Transducer.png">
+      <publishTime>11/08/2019 02:06:44</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_334822111515401__Transducer.png">
+      <publishTime>11/08/2019 02:04:23</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_335334113250701__Transducer.png">
+      <publishTime>11/08/2019 02:07:21</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_335718113480401__Transducer.png">
+      <publishTime>11/08/2019 02:02:49</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_340338112092701__Transducer.png">
+      <publishTime>11/08/2019 01:58:11</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_340908112533801__Transducer.png">
+      <publishTime>11/08/2019 02:05:18</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341118112075801__Transducer.png">
+      <publishTime>11/08/2019 01:58:07</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341336111174801__Transducer.png">
+      <publishTime>11/08/2019 02:00:45</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341356111191901__Transducer.png">
+      <publishTime>11/08/2019 02:06:22</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341402111215101__Transducer.png">
+      <publishTime>11/08/2019 02:09:51</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341442111200101__Transducer.png">
+      <publishTime>11/08/2019 02:06:31</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341535111213601__Transducer.png">
+      <publishTime>11/08/2019 01:58:18</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341558111173301__Transducer.png">
+      <publishTime>11/08/2019 02:01:54</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341653112433501__Transducer.png">
+      <publishTime>11/08/2019 02:06:25</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_341817112060001__Transducer.png">
+      <publishTime>11/08/2019 01:59:39</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_342020112270101__Transducer.png">
+      <publishTime>11/08/2019 02:04:51</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_342024109220301__Transducer.png">
+      <publishTime>11/08/2019 02:08:46</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_342331112142501__Transducer.png">
+      <publishTime>11/08/2019 02:01:22</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343233112164901__Transducer.png">
+      <publishTime>11/08/2019 01:58:21</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343353112144101__Transducer.png">
+      <publishTime>11/08/2019 02:03:36</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343529112162201__Transducer.png">
+      <publishTime>11/08/2019 02:07:45</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343641112204202__Transducer.png">
+      <publishTime>11/08/2019 02:07:59</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343641112204203__Transducer.png">
+      <publishTime>11/08/2019 02:08:00</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343652112172101__Transducer.png">
+      <publishTime>11/08/2019 01:59:05</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343816109550401__Transducer.png">
+      <publishTime>11/08/2019 02:05:39</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343829112303501__Transducer.png">
+      <publishTime>11/08/2019 02:07:23</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343854112202701__Transducer.png">
+      <publishTime>11/08/2019 02:08:42</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_343906112154701__Transducer.png">
+      <publishTime>11/08/2019 01:59:18</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344029112143501__Transducer.png">
+      <publishTime>11/08/2019 02:00:42</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344038112194401__Transducer.png">
+      <publishTime>11/08/2019 02:06:28</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344134112223501__Transducer.png">
+      <publishTime>11/08/2019 02:04:29</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344314112202401__Transducer.png">
+      <publishTime>11/08/2019 02:01:19</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344357112280901__Transducer.png">
+      <publishTime>11/08/2019 02:05:51</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344359111591101__Transducer.png">
+      <publishTime>11/08/2019 02:02:06</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344507112263801__Transducer.png">
+      <publishTime>11/08/2019 02:00:09</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344520112194301__Transducer.png">
+      <publishTime>11/08/2019 02:04:15</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344535112283001__Transducer.png">
+      <publishTime>11/08/2019 02:06:58</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344645112253401__Transducer.png">
+      <publishTime>11/08/2019 02:09:03</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344653112264901__Transducer.png">
+      <publishTime>11/08/2019 02:02:38</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344819112265701__Transducer.png">
+      <publishTime>11/08/2019 02:09:12</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344912112264101__Transducer.png">
+      <publishTime>11/08/2019 02:07:54</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344917112273101__Transducer.png">
+      <publishTime>11/08/2019 02:03:01</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_344954114084501__Transducer.png">
+      <publishTime>11/08/2019 02:00:49</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345023110111401__Transducer.png">
+      <publishTime>11/08/2019 02:01:40</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345300112283701__Transducer.png">
+      <publishTime>11/08/2019 01:58:51</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345300112283702__Transducer.png">
+      <publishTime>11/08/2019 01:58:43</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345300112283703__Transducer.png">
+      <publishTime>11/08/2019 01:58:41</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345301112283701__Transducer.png">
+      <publishTime>11/08/2019 01:58:38</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345302112283701__Transducer.png">
+      <publishTime>11/08/2019 01:58:40</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345333109474501__Transducer.png">
+      <publishTime>11/08/2019 02:02:19</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345338112311801__Transducer.png">
+      <publishTime>11/08/2019 02:09:42</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345524112374401__Transducer.png">
+      <publishTime>11/08/2019 02:00:17</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345738112391501__Transducer.png">
+      <publishTime>11/08/2019 02:05:54</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_345842112380201__Transducer.png">
+      <publishTime>11/08/2019 02:05:10</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_350633114103701__Transducer.png">
+      <publishTime>11/08/2019 02:07:29</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_350845110540101__Transducer.png">
+      <publishTime>11/08/2019 02:05:45</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_350848111381701__Transducer.png">
+      <publishTime>11/08/2019 02:02:24</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_351401114132401__Transducer.png">
+      <publishTime>11/08/2019 02:08:19</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_351552111434801__Transducer.png">
+      <publishTime>11/08/2019 01:58:35</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_351554113590701__Transducer.png">
+      <publishTime>11/08/2019 02:08:05</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_352518113454001__Transducer.png">
+      <publishTime>11/08/2019 02:08:11</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_352555113462001__Transducer.png">
+      <publishTime>11/08/2019 02:03:48</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_354027114273101__Transducer.png">
+      <publishTime>11/08/2019 02:06:01</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_354208114282801__Transducer.png">
+      <publishTime>11/08/2019 02:05:19</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_354551114085401__Transducer.png">
+      <publishTime>11/08/2019 01:58:10</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_355855114043501__Transducer.png">
+      <publishTime>11/08/2019 01:59:58</publishTime>
+    </File>
+    <File Include="Content/Images/Hydrographs/Hydrographs_GWSI_365321113572401__Transducer.png">
+      <publishTime>11/08/2019 01:58:32</publishTime>
+    </File>
+    <File Include="Content/Images/Image_Unavailable.PNG">
+      <publishTime>10/16/2019 12:38:51</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Agua_Fria_Constructed_USF_400_569776.9c42a884.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Agua_Fria_Managed_Recharge_400_569775.55602fe7.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Avra_Valley_USF_400_564896.0ee9feb4.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/BKW_Farms_GSF_400_538133.6186b8e1.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/CAVSARP_USF_400_578806.43ad0e4c.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Central_Az_IDD_GSF_400_531382.4f977504.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Cortaro_Marana_ID_GSF_400_538100.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Granite_Reef_USP_USF_400_564896.ae5ef9d9.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/GRIDD_GSF_400_211277.d34c2e65.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Hassayampa_Managed_Recharge_400_216387.e0b88dcf.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Hieroglyphic_Mountains_USF_400_584466.d2d93139.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Hohokam_IDD_GSF_400_534489.e0a66dfa.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Kai_Farms_GSF_558092.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Lower_Santa Cruz_USF_400_561366.ad0a4ad9.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Lower_Santa_Cruz_Managed_USF_400_561366.331e1c74.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Maricopa_Stanfield_GSF_400_531381.b811bd22.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Maricopa_Stanfield_GSF_400_531381.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Maricopa_Water_District_GSF_558246.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/New_Magma_IDD_GSF_400_534888.3c48d2ba.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Pima_Mine_Road_USF_400_577501.59d90b21.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Queen_Creek_IDD_GSF_400_534550.ceb50eca.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Roosevelt_Water_Conservation_District_GSF_545695.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/SAVSARP_USF_400_211276.7090e33d.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/SRP_GSF_400_553133.0f3b497c.png">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Superstition_Mountains_USF_400_207702.c4cb6d6f.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Tonopah_Desert_USF_400_593305.jpg">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/Tonopah_ID_aerial_view_400_534439.b166f8e4.png">
+      <publishTime>05/06/2020 13:29:43</publishTime>
+    </File>
+    <File Include="Content/Images/WaterBank/waterBankLogo.png">
+      <publishTime>06/05/2020 08:32:16</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>10/01/2019 10:05:47</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/01/2019 10:06:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/01/2019 10:06:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/01/2019 10:06:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/01/2019 10:06:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/01/2019 10:06:07</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/01/2019 10:06:07</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>01/03/2020 16:34:03</publishTime>
+    </File>
+    <File Include="MapConfig/aaws.json">
+      <publishTime>08/26/2021 13:16:58</publishTime>
+    </File>
+    <File Include="MapConfig/communitywater.json">
+      <publishTime>08/19/2021 12:45:43</publishTime>
+    </File>
+    <File Include="MapConfig/gwsi.json">
+      <publishTime>09/09/2021 11:59:42</publishTime>
+    </File>
+    <File Include="MapConfig/igfr.json">
+      <publishTime>08/20/2021 07:50:44</publishTime>
+    </File>
+    <File Include="MapConfig/recovery.json">
+      <publishTime>09/23/2021 09:05:16</publishTime>
+    </File>
+    <File Include="MapConfig/surfacewater.json">
+      <publishTime>09/22/2021 14:13:28</publishTime>
+    </File>
+    <File Include="MapConfig/template.json">
+      <publishTime>08/13/2021 11:34:02</publishTime>
+    </File>
+    <File Include="MapConfig/wellreg.json">
+      <publishTime>07/02/2021 15:20:31</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>10/01/2019 10:05:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/23/2021 11:22:29</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
